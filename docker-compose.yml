@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:     
+  housekeeper_api:
+    build: .
+    container_name: recipe_api
+    ports:
+      - "80:8000"
+    networks:
+      - recipe_network
+
+networks:
+  recipe_network: {}
